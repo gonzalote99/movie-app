@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/4e948b40f1.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="https://lookmovie.la/favicon.ico" type="image/icon">
+  <title>movie app</title>
+</head>
+<body>
+  <header>
+  <img class="logo" src="https://raw.githubusercontent.com/HamzaZaidiX/Movie-App-By-HTML-CSS-JAVASCRIPT/main/assets/logo.webp" alt="Logo" />
+   <form id="form">
+  <input
+  type="text"
+  placeholder="search movie"
+  autocomplete="off"
+  id="search"
+  class="search"
+  /><i class="fas fa-search"></i>
+  </form>
+  </header>
+  <div id="tags"></div>
+  <div id="myNav" class="overlay" >
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div class="overlay-content" id="overlay-content"></div>
+   <a href="javascript:void(0)" class="arrow arrow-left" id="left-arrow"><i class="fas fa-arrow-left"></i></a>
+   <a href="javascript:void(0)" class="arrow arrow-right" id="right-arrow"><i class="fas fa-arrow-right"></i></a>
+  </div>
+  <main id="main"></main>
+  <div class="pagination">
+  <div class="page" id="prev">previous page</div>
+  <div class="current" id="current">1</div>
+  <div class="page" id="next">next page</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
